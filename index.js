@@ -127,17 +127,20 @@ Score: ${score}
 
     const fullMessage = response + rugCheck;
 
-    if (image) {
-      bot.sendPhoto(chatId, image, {
-        caption: fullMessage,
-        parse_mode: 'HTML',
-        disable_web_page_preview: true
-      });
-    } else {
-      bot.sendMessage(chatId, fullMessage, {
-        parse_mode: 'HTML',
-        disable_web_page_preview: true
-      });
-    }
+      // ⏳ Delay 10 giây trước khi gửi kết quả
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
+      if (image) {
+        bot.sendPhoto(chatId, image, {
+          caption: fullMessage,
+          parse_mode: 'HTML',
+          disable_web_page_preview: true
+        });
+      } else {
+        bot.sendMessage(chatId, fullMessage, {
+          parse_mode: 'HTML',
+          disable_web_page_preview: true
+        });
+      }
   }
 });

@@ -103,7 +103,9 @@ bot.on('message', async (msg) => {
 Score: ${score}
 🔗 <a href="${tLinkMevx}">Mevx</a>
 🔗 <a href="${checkCallTele}">Check Call</a>
-🔗 <a href="https://solscan.io/account/${rugData.creator}?remove_spam=true&exclude_amount_zero=true&token_address=${rugData.mint}#transfers">Dev Buy/Sell</a> `;
+🔗 <a href="https://solscan.io/account/${rugData.creator}?remove_spam=true&exclude_amount_zero=true&token_address=${rugData.mint}#transfers">Dev Buy/Sell</a> 
+🔗 <a href="https://solscan.io/token/${rugData.mint}#holders">Dev Buy/Sell</a> `;
+
 
       const holders = rugData.topHolders;
       if (holders && holders.length > 0) {

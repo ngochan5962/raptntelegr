@@ -104,7 +104,7 @@ Score: ${score}
 🔗 <a href="${tLinkMevx}">Mevx</a>
 🔗 <a href="${checkCallTele}">Check Call</a>
 🔗 <a href="https://solscan.io/account/${rugData.creator}?remove_spam=true&exclude_amount_zero=true&token_address=${rugData.mint}#transfers">Dev Buy/Sell</a> 
-🔗 <a href="https://solscan.io/token/${rugData.mint}#holders">Holder</a> `;
+🔗 <a href="https://solscan.io/token/${rugData.mint}?visualize=true#holders">Holder Visualize</a> `;
 
 
       const holders = rugData.topHolders;
